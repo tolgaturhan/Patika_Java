@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/kod_bloklari_scope/kod_bloklari_scope.iml" filepath="$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/kod_bloklari_scope/kod_bloklari_scope.iml" />
       <module fileurl="file://$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/kosullu_ifadeler_kod_bloklari.iml" filepath="$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/kosullu_ifadeler_kod_bloklari.iml" />
       <module fileurl="file://$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/mantiksal_operatorler/mantiksal_operatorler.iml" filepath="$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/mantiksal_operatorler/mantiksal_operatorler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/switch_case_yapilari/switch_case_yapilari.iml" filepath="$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/switch_case_yapilari/switch_case_yapilari.iml" />
     </modules>
   </component>
 </project>
