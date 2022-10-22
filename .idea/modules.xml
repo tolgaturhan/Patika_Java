@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Patika_Java.iml" filepath="$PROJECT_DIR$/.idea/Patika_Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/if_else_bloklari/if_else_bloklari.iml" filepath="$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/if_else_bloklari/if_else_bloklari.iml" />
       <module fileurl="file://$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/karsilastirma_operatorleri/karsilastirma_operatorleri.iml" filepath="$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/karsilastirma_operatorleri/karsilastirma_operatorleri.iml" />
       <module fileurl="file://$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/kod_bloklari_scope/kod_bloklari_scope.iml" filepath="$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/kod_bloklari_scope/kod_bloklari_scope.iml" />
       <module fileurl="file://$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/kosullu_ifadeler_kod_bloklari.iml" filepath="$PROJECT_DIR$/kosullu_ifadeler_kod_bloklari/kosullu_ifadeler_kod_bloklari.iml" />
