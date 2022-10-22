@@ -32,7 +32,7 @@ public class Main {
                 }
                 break;
             default:
-                System.out.println("Lütfen bir işlemlerden birini seçiniz...");
+                System.out.println("Lütfen işlemlerden birini seçiniz...");
         }
 
        /* if (select == 1) {
