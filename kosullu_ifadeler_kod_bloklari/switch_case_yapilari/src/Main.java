@@ -25,5 +25,11 @@ public class Main {
         else{
             System.out.println("film izleyemezsiniz");
         }
+
+        String name = "Ali",surname = "Vara";
+
+        String compare = (name.equals(surname)) ? "true": "false";
+        System.out.println(compare);
+
     }
 }
