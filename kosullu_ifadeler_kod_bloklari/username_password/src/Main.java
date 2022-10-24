@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String userName, password, nPassword, nPass;
+        String userName, password, nPassword, nPass, mail;
         Scanner login = new Scanner(System.in);
 
         System.out.print("Kullanıcı Adı: ");
@@ -13,7 +13,7 @@ public class Main {
 
         if (userName.equals("patika")) {
             if (password.equals("Java101")) {
-                System.out.println("Sisteme giriş yapıldı, sayfaya yönlendiriliyorsunuz...");
+                System.out.println("Sisteme giriş yapıldı, sayfaya yönlendiriliyorsunuz...!");
             } else {
                 System.out.print("Şifreniz yanlış, yeni şifre belirlemek için 1'i tıklayınız: ");
                 nPass = login.nextLine();
@@ -21,16 +21,19 @@ public class Main {
                     System.out.print("Yeni Şifreniz: ");
                     nPassword = login.nextLine();
                     if (nPassword.equals("Java101") || (nPassword.equals(password))) {
-                        System.out.println("Daha önce kullandığınız bir şifre kullanamazsınız...");
+                        System.out.println("Daha önce kullandığınız bir şifre kullanamazsınız...!");
                     } else {
-                        System.out.println("Yeni Şifreniz Başarıyla oluşturulmuştur...");
+                        System.out.println("Yeni Şifreniz Başarıyla oluşturulmuştur...!");
                     }
                 } else {
-                    System.out.println("Lütfen daha sonra tekrar deneyiniz...");
+                    System.out.println("Lütfen daha sonra tekrar deneyiniz...!");
                 }
             }
         } else {
-            System.out.println("Kullanıcı adı yanlış...");
+            System.out.println("Kullanıcı adı yanlış...!");
+            System.out.print("Bilgilerinizi öğrenmek için mail adresinizi giriniz: ");
+            mail = login.nextLine();
+            System.out.println("Bilgileriniz " + mail + " adresine gönderilmiştir...!");
         }
     }
 }
