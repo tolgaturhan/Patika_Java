@@ -37,7 +37,6 @@ public class Main {
                         ageDsc = price * 0.3;
                     }
 
-
                     System.out.println("Price is being calculated, please wait...");
                     total = price - wayDsc - ageDsc;
                     System.out.println("Price: " + price);
