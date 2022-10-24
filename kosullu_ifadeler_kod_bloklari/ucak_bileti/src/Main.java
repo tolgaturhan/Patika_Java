@@ -6,17 +6,17 @@ public class Main {
         int km, way, age;
         double perKm = 0.1, ageDsc = 0, wayDsc = 0, price, total;
 
-        System.out.print("Please Enter The Distance In Km: ");
+        System.out.print("Please Enter The Distance In Km (One-Way): ");
         km = ticket.nextInt();
         price = km * perKm;
 
         if (km < 1) {
-            System.out.println("KM must be a positive integer...");
+            System.out.println("KM must be a positive Integer...");
         } else {
             System.out.print("Please Enter Passenger's Age: ");
             age = ticket.nextInt();
             if (age < 1) {
-                System.out.println("Age must be a positive integer...");
+                System.out.println("Age must be a positive Integer...");
             } else {
                 System.out.print("Please Select 1 for One-Way, 2 for Round-Trip: ");
                 way = ticket.nextInt();
@@ -25,6 +25,7 @@ public class Main {
                         wayDsc = 0;
                     }
                     if (way == 2) {
+                        price = price * 2;
                         wayDsc = price * 0.2;
                     }
                     if (age < 12) {
