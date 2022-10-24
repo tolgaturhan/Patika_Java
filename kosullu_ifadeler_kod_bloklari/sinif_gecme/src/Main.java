@@ -31,7 +31,7 @@ public class Main {
         if (muzik > 100 || muzik < 0)
             muzik = 0;
 
-        double ort = (matematik + fizik + turkce + kimya + muzik)/6;
+        int ort = (matematik + fizik + turkce + kimya + muzik)/6;
         System.out.println("Ortalamanız: " + ort);
 
         if (ort >= 55){
