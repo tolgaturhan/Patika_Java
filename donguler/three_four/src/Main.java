@@ -17,7 +17,6 @@ public class Main {
                         System.out.print(i + ",");
                         total += i;
                         sayac += 1;
-
                     }
                     if (i == num) {
                         System.out.println("\b");
