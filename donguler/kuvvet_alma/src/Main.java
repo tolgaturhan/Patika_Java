@@ -9,13 +9,13 @@ public class Main {
         if (scan.hasNextInt()) {
             number = scan.nextInt();
             if (number > 3) {
-                for (four = 1; four <= number; four = four * 4) {
+                for (four = 1; four <= number; four *= 4) {
                     System.out.print(four + ", ");
                 }
                 System.out.println("\b\b");
             }
             if (number > 4) {
-                for (five = 1; five <= number; five = five * 5) {
+                for (five = 1; five <= number; five *= 5) {
                     System.out.print(five + ", ");
                 }
                 System.out.println("\b\b");
