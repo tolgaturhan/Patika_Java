@@ -11,7 +11,7 @@ public class Main {
         System.out.print("Üs Olacak Sayı: ");
         l = scan.nextInt();
 
-        if (l >=0) {
+        if (l >= 0) {
             for (int i = 1; i <= l; i++) {
                 total *= k;
             }
@@ -21,7 +21,7 @@ public class Main {
             for (int i = 1; i <= l; i++) {
                 total *= k;
             }
-            System.out.println(1/ (double) total);
+            System.out.println(1 / (double) total);
         }
     }
 }
