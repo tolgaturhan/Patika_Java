@@ -19,7 +19,7 @@ public class Main {
             }
             scan.nextLine();
         } while (number%2 != 1);
-        System.out.println(total);
+        System.out.println("Çift ve 4'e Bölünebilen Sayıların Toplamı: " + total);
     }
 }
 
