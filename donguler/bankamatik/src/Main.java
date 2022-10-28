@@ -13,8 +13,7 @@ public class Main {
             password = scan.nextLine();
 
             if (userName.equals("tolga") && password.equals("1903")) {
-                System.out.println("Sisteme Başarıyla Giriş Yapıldı.");
-                System.out.println("Karakartal Bankasına Hoşgeldiniz.");
+                System.out.println("Sisteme Başarıyla Giriş Yapıldı.\nKarakartal Bankasına Hoşgeldiniz.");
                 do {
                     System.out.println("----------------------------------------");
                     System.out.println("1-Para Yatırma\n2-Para Çekme\n3-Bakiye Sorgulama\n4-Çıkış");
