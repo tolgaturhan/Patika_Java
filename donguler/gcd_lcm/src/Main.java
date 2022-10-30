@@ -11,17 +11,25 @@ public class Main {
         System.out.print("Second Number: ");
         n2 = scan.nextInt();
         swap = n1;
-        if (n2 < n1) {
-            n1 = n2;
-            n2 = swap;
-        }
-        while (i <= n1) {
-            if (n1 % i == 0 && n2 % i == 0) {
-                gcd = i;
+        if (n1 == n2 || n1 < 1 || n2 < 1) {
+            if (n1 == n2) {
+                System.out.println("Numbers cannot be equal...");
+            } else {
+                System.out.println("Numbers cannot be zero or negative...");
             }
-            i++;
+        } else {
+            if (n2 < n1) {
+                n1 = n2;
+                n2 = swap;
+            }
+            while (i <= n1) {
+                if (n1 % i == 0 && n2 % i == 0) {
+                    gcd = i;
+                }
+                i++;
+            }
+            System.out.println("GCD (" + n1 + ", " + n2 + "): " + gcd);
+            System.out.println("LCM (" + n1 + ", " + n2 + "): " + n1 * n2 / gcd);
         }
-        System.out.println("GCD (" + n1 + ", " + n2 + "): " + gcd);
-        System.out.println("LCM (" + n1 + ", " + n2 + "): " + n1 * n2 / gcd);
     }
 }
