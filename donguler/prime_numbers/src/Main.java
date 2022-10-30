@@ -2,10 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
-
-        System.out.print("Bir sayi giriniz: ");
+        System.out.println("This program will calculate prime numbers from 0 to the number which you entered");
+        System.out.print("Please Enter a number: ");
         int n = scan.nextInt();
         int count = 0;
         int i = 2;
