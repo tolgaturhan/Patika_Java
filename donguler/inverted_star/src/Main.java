@@ -17,7 +17,7 @@ public class Main {
                         System.out.print("*");
                     }
                     n -= 1;
-                    System.out.println("");
+                    System.out.println();
                 }
             } else {
                 System.out.println("Please enter positive integer...");
