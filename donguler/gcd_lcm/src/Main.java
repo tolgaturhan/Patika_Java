@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // GCD = Greatest Common Divisor
-        // LCM = Lowest Common Multiple
+        // GCD = The Greatest Common Divisor
+        // LCM = The Lowest Common Multiple
         Scanner scan = new Scanner(System.in);
         int n1, n2, swap, i = 1, gcd = 1;
         System.out.print("First Number: ");
