@@ -1,59 +1,52 @@
 import java.util.Scanner;
-
 public class Main {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String userName, password;
-        int balance = 5000, price, wrongPass = 3, select;
-
-        while (wrongPass > 0) {
-            System.out.print("Kullanıcı Adınız: ");
-            userName = scan.nextLine();
-            System.out.print("Şifreniz: ");
-            password = scan.nextLine();
-
-            if (userName.equals("tolga") && password.equals("1903")) {
-                System.out.println("Sisteme Başarıyla Giriş Yapıldı.\nKarakartal Bankasına Hoşgeldiniz.");
+    public static void main(String[]args){
+        Scanner input=new Scanner(System.in);
+        String userName,password;
+        int right=3;
+        int balance=1500,price;
+        int select;
+        while (right>0){
+            right--;
+            System.out.print("Kullanıcı adı: ");
+            userName=input.nextLine();
+            System.out.print("Parola :");
+            password=input.nextLine();
+            if (userName.equals("patika")&&password.equals("dev123")){
+                System.out.println("Merhaba, X Bankasına Hoşgeldiniz.");
                 do {
-                    System.out.println("----------------------------------------");
-                    System.out.println("1-Para Yatırma\n2-Para Çekme\n3-Bakiye Sorgulama\n4-Çıkış");
-                    System.out.print("Lütfen Yapmak İstediğiniz İşlemi Seçiniz: ");
-                    select = scan.nextInt();
-                    System.out.println("----------------------------------------");
-
+                    System.out.println("1-Para Yatırma\n2-Para Çekme\n3-Bakiye Sorgula\n4-Çıkış Yap");
+                    System.out.print("Lütfen yapmak istediğiniz işlemi seçiniz:");
+                    select=input.nextInt();
                     switch (select) {
-                        case (1) -> {
-                            System.out.print("Lütfen Yatırmak İstediğiniz Tutarı Giriniz: ");
-                            price = scan.nextInt();
+                        case 1 -> {
+                            System.out.print("Lütfen yatıracağınız miktarı giriniz:");
+                            price = input.nextInt();
                             balance += price;
                         }
-                        case (2) -> {
-                            System.out.print("Lütfen Çekmek İstediğiniz Tutarı Giriniz: ");
-                            price = scan.nextInt();
+                        case 2 -> {
+                            System.out.print("Lütfen çekeceğiniz miktarı giriniz:");
+                            price = input.nextInt();
                             if (price > balance) {
-                                System.out.println("Yetersiz Bakiye...");
+                                System.out.println("Bakiye Yetersiz");
                             } else {
                                 balance -= price;
                             }
                         }
-                        case (3) -> {
-                            System.out.print("Bakiyeniz: " + balance);
-                            System.out.println();
-                        }
+                        case 3 -> System.out.println("Bakiyeniz:" + balance);
                     }
-                } while (select != 4);
-                System.out.println("Sistemden Başarıyla Çıkış Yapıldı,\nTekrar Görüşmek Dileğiyle.");
-                System.out.println("----------------------------------------");
+                }while (select!=4);
+                System.out.println("Tekrar Görüşmek Üzere");
                 break;
-
-            } else {
-                wrongPass--;
-                System.out.println("Hatalı Kullanıcı Adı yada Şifre, Lütfen Tekrar Deneyiniz.");
-                if (wrongPass == 0) {
-                    System.out.println("Hesabınız Bloke Olmuştur, Lütfen Banka İle İletişime Geçiniz.");
+            }else {
+                System.out.println("Kullanıcı adı veya şifre hatalı.Tekrar deneyiniz.");
+                if (right==0){
+                    System.out.println("Hesabınız bloke olmuştur.Banka ile görüşünüz.");
+                }else {
+                    System.out.println("Kalan hakkınız: "+right);
                 }
-                System.out.println("Kalan Hakkınız: " + wrongPass);
             }
         }
+
     }
 }
