@@ -21,6 +21,5 @@ public class Main {
         } else {
             System.out.println(n + " is not a Palindrom Number.");
         }
-
     }
 }
