@@ -1,12 +1,15 @@
 public class Main {
     static int f (int n){
         if (n == 1){
+            System.out.print("Test => ");
             return 1;
         }
-        return f(n-1) + n;
+        int result = f(n-1) + n;
+        System.out.print(result + ", ");
+        return result;
     }
     public static void main(String[] args) {
-        System.out.println(f(4));
+        f(4);
         // f(4) = f(3) + 4
         // f(3) = f(2) + 3
         // f(2) = f(1) + 1
